@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fragment_guess"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/num_count"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:autoSizeTextType="uniform"
+            android:text="TextView"
+            android:textColor="@android:color/holo_red_light"
+            app:layout_constraintBottom_toBottomOf="@+id/heartIcon"
+            app:layout_constraintStart_toEndOf="@+id/heartIcon"
+            app:layout_constraintTop_toTopOf="@+id/heartIcon" />
+
+
+        <ImageView
+            android:id="@+id/heartIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/favorite_button" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:max="15"
+            android:progress="0"
+            android:progressDrawable="@drawable/custom_progress"
+            app:layout_constraintBottom_toBottomOf="@+id/heartIcon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/num_count"
+            app:layout_constraintTop_toTopOf="@+id/heartIcon" />
+
+        <TextView
+            android:id="@+id/song_name"
+            android:layout_width="102dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="52dp"
+            android:fontFamily="@font/racing_sans_one"
+            android:text="Song name:"
+            android:textColor="#1DB954"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/songInput"
+            app:layout_constraintTop_toBottomOf="@+id/num_count" />
+
+        <EditText
+            android:id="@+id/songInput"
+            android:layout_width="293dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/gradient_rounded_background"
+            android:hint="Input value"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"
+
+            android:padding="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.338"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/song_name" />
+
+        <ImageButton
+            android:id="@+id/sendButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:background="#1DB954"
+            android:contentDescription="Send"
+            android:scaleType="centerInside"
+            app:layout_constraintStart_toEndOf="@+id/songInput"
+            app:layout_constraintTop_toTopOf="@id/songInput"
+            app:srcCompat="@drawable/send_button" />
+
+        <TextView
+            android:id="@+id/feedbackText"
+            android:layout_width="280dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="100dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/songInput" />
+
+        <ImageView
+            android:id="@+id/feedbackImage"
+            android:layout_width="101dp"
+            android:layout_height="92dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/feedbackText"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <include
+            android:id="@+id/musicPlayerBar"
+            layout="@layout/music_player_bar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">MusicPlayer</string>
+
+    GUESS
+    <string name="incorrect_guess">This isn\'t the correct song... Try again</string>
+    <string name="correct_guess">That\'s the right answer, good job!</string>
+    <string name="finished_message">You’ve got %1$d out of %2$d songs right!\nDo you want to try another game?</string>
+    <string name="nav_search">Search</string>
+    <string name="nav_guess">Guess</string>
+    <string name="nav_favourites">Favourites</string>
+
+    SEARCH
+    <string name="see_all_songs_button"><u>See all songs</u></string>
+    <string name="see_all_albums_button"><u>See all albums</u></string>
+    <string name="initial_time_audio_player">0:00</string>
+    <string name="default_price_song_details">1.99$</string>
+    <string name="genres_song_details">Pop, Rock</string>
+    <string name="release_date_song_details">12/24/2025</string>
+    <string name="song_title_song_details">The Song Title</string>
+    <string name="album_song_details">The Album</string>
+    <string name="artist_song_details">The Artist</string>
+    <string name="album_details_artist">Artist</string>
+    <string name="album_details_title">Title</string>
+    <string name="earliest">Earliest</string>
+    <string name="shortest">Shortest</string>
+    <string name="a_z">A-Z</string>
+
+</resources>

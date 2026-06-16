@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="favourite" type="id" />
+    <item name="track_fav_button" type="id" />
+    <item name="track_heart_icon" type="id" />
+</resources>
